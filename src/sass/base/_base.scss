@@ -1,5 +1,6 @@
 body {
   @include fontPrimary();
+  color: #fff;
   background-color: $black;
 }
 
