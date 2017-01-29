@@ -1,0 +1,24 @@
+{
+  "name": "Gauntlet",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "react-scripts": "0.8.5"
+  },
+  "dependencies": {
+    "node-sass": "^4.4.0",
+    "normalize.css": "^5.0.0",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "svgstore-cli": "^1.2.1"
+  },
+  "scripts": {
+    "start": "npm run watch-css & npm run svg & react-scripts start",
+    "build": "npm run build-css && npm run svg & && react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "build-css": "node-sass src/sass/main.scss src/index.css",
+    "watch-css": "node-sass src/sass/main.scss src/index.css -w",
+    "svg": "svgstore -o public/img/sprite.svg src/img/svg/*.svg"
+  }
+}
