@@ -12,3 +12,8 @@ h5,
 h6 {
   @include fontSecondary();
 }
+
+img {
+  max-width: 100%;
+  height: auto;
+}
